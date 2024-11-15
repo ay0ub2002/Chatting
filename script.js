@@ -10,7 +10,7 @@ function sendMessage() {
     if (messageText) { // qi msg vide
         // Crée un nouvel élément de message
         const messageElement = document.createElement('div');
-        messageElement.classList.add('message', 'sent'); // Applique les classes CSS
+        messageElement.classList.add('message', 'sent'); // applique les classes CSS
 
         //ajout de l'heure
         messageElement.innerHTML = `<p>${messageText}</p><span class="timestamp">${new Date().toLocaleTimeString()}</span>`;
